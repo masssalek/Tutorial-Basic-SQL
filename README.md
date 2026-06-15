@@ -113,7 +113,7 @@
 perhatikan code **deksripsi to deskripsi**  
 ![image 10](img/10.png)
 
-## Mengedit Isi Tabel 1
+## [1] Mengedit Isi Tabel 
 - Code
     
     biar gak puyeng gue isi code berdasarkan contoh. Fungsinya Ngubah type dan urutan pada kolom *nama* menjadi setelah *deskripsi*. (Bandingkan contoh dengan *Merubah Nama Pada Kolom Tabel*)
@@ -127,7 +127,7 @@ perhatikan code **deksripsi to deskripsi**
     
 ![image 11](img/11.png)
 
-## Mengedit Isi Tabel 2
+## [2] Mengedit Isi Tabel
 - Code
     
     HANYA Mengubah urutan pada kolom *nama* menjadi urutan pertama. (Bandingkan contoh dengan *Mengedit Isi Tabel 1*)
@@ -231,3 +231,60 @@ Sengaja cuma ngisi kolom *id* dan *nama* biar bisa liat data pada kolom *harga*,
 
 Code diatas hanya mengapus data pada tabel barang, Terlihat pada gambar jika data pada tabel sudah Empty.
 ![image 18](img/18.png)
+
+## Membuat Tabel Baru (Kolom Lebih Banyak Dikit)
+- Code
+
+  ```
+     create table products
+     (
+     id               varchar(10) not null,
+     name             varchar(100) not null,
+     description      text,
+     price            int unsigned not null,
+     quantity         int unsigned not null default 0,
+     created_at       timestamp not null default current_timestamp
+     )
+     engine = innodb;
+  ```
+  
+- Contoh
+
+Kali ini tabel yang dibuat lebih banyak bro.
+![image 19](img/19.png)
+
+## [1] Mengisi Data Pada Tabel 
+- Code
+
+     Mengisi data *id, name, price, quantity* pada tabel *products*
+  ```
+     insert into products(id, name, price, quantity)
+     values ("01", "Mie Ayam Original", 10000, 2);
+  ```
+
+     Menampilkan data pada tabel products
+  ```
+     select * from products;
+  ```
+  
+- Contoh
+![image 20](img/20.png)
+
+## [2] Mengisi Data Pada Tabel
+- Code
+
+     Mengisi data *id, name, description, price, quantity* pada tabel *products*
+  ```
+     insert into products(id, name, description, price, quantity)
+     values ("01", "Mie Ayam Bakso", "Ayamnya masih hiduo", 15000, 2);
+  ```
+
+     Menampilkan data pada tabel products
+  ```
+     select * from products;
+  ```
+  
+- Contoh
+![image 21](img/21.png)
+
+NEXT ISI DATA SEBANYAK-BANYAKNYA UNTUK PRAKTIK LEBIH DALAM YAA BROWWW
