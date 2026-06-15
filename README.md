@@ -57,10 +57,12 @@
 
 ![image 5](img/5.png)
 
-## Menaampilkan Tabel
+## Menampilkan Tabel
 - Code
-
-    ```show tables;``` (inget! sebelumnya lo udah masukin *use nama_database*) jadi, code ini hanya menampilkan tabel pada database yang lo gunakan.
+  
+    inget! sebelumnya lo udah masukin *use nama_database*
+  
+    ```show tables;```  jadi, code ini hanya menampilkan tabel pada database yang lo gunakan.
 
 - Contoh
 
@@ -68,8 +70,9 @@
 
 ## Menampilkan Isi Tabel
 - Code
-
-    ```describe barang;``` (gue ingetin lagi, sebelumnya lo udah masukin *use nama_database*) jadi, code ini hanya menampilkan **isi** tabel pada database yang lo gunakan.
+  
+    gue ingetin lagi, sebelumnya lo udah masukin *use nama_database*
+    ```describe barang;```  jadi, code ini hanya menampilkan **isi** tabel pada database yang lo gunakan.
 
 - Contoh
 
@@ -77,8 +80,10 @@
 
 ## Menampilkan Code Pembuatan Tabel
 - Code
-
-    ```show create tabel barang;``` buat liat sintak yang dipake saat membuat tabel.
+  
+    buat liat sintak yang dipake saat membuat tabel.
+  
+    ```show create tabel barang;``` 
 
 - Contoh
 
@@ -110,7 +115,7 @@
   
 - Contoh
   
-perhatikan code **deksripsi to deskripsi**  
+perhatikan code **deksripsi to deskripsi** itu di rename bro.
 ![image 10](img/10.png)
 
 ## [1] Mengedit Isi Tabel 
@@ -213,7 +218,7 @@ jika nilai default pada kolom *waktu_dibuat* tidak di isi, maka data akan terisi
   
 - Contoh
 
-Sengaja cuma ngisi kolom *id* dan *nama* biar bisa liat data pada kolom *harga*, *jumlah*, *deskripsi*, dan *waktu_dibuat* yang terisi otomatis karena sebelumnya sudah kita edit nilainya   
+Sengaja cuma ngisi kolom *id* dan *nama* biar bisa liat data pada kolom *harga*, *jumlah*, *deskripsi*, dan *waktu_dibuat* yang akan terisi otomatis karena sudah kita edit nilainya   
 ![image 16](img/16.png)
 
 ## Menghapus Data Pada Tabel
@@ -232,7 +237,7 @@ Sengaja cuma ngisi kolom *id* dan *nama* biar bisa liat data pada kolom *harga*,
 Code diatas hanya mengapus data pada tabel barang, Terlihat pada gambar jika data pada tabel sudah Empty.
 ![image 18](img/18.png)
 
-## Membuat Tabel Baru (Kolom Lebih Banyak Dikit)
+## Membuat Tabel Baru (Kolom Lebih Banyak Dikit Dari Sebelumnya)
 - Code
 
   ```
@@ -314,6 +319,7 @@ Sebelumnya gue selalu buat code untuk **Menampilkan semua data pada tabel**, kal
 - Code
 
       Menampilkan data *name, quantity, id* pada tabel *products*
+  
   ```
      select name, quantity, id from products;
   ```
