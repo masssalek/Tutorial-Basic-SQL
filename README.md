@@ -287,4 +287,25 @@ Kali ini tabel yang dibuat lebih banyak bro.
 - Contoh
 ![image 21](img/21.png)
 
+## [3] Mengisi Data Pada Tabel Banyak
+- Code
+
+     Mengisi data *id, name, price, quantity* pada tabel *products* langsung banyak.
+  ```
+     insert into products(id, name, price, quantity)
+     values ("03", "Mie Ayam Yamin", 15000, 10),
+            ("04", "Mie Ayam Spesial", 15000, 5),
+            ("05", "Mie Ayam Pangsit", 12000, 1),
+            ("06", "Mie Ayam Baso Urat", 20000, 20),
+            ("07", "Mie Ayam Kuli", 20000, 15);
+  ```
+
+     Menampilkan data pada tabel products
+  ```
+     select * from products;
+  ```
+  
+- Contoh
+![image 22](img/22.png)
+
 NEXT ISI DATA SEBANYAK-BANYAKNYA UNTUK PRAKTIK LEBIH DALAM YAA BROWWW
