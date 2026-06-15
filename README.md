@@ -207,7 +207,7 @@ jika nilai default pada kolom *waktu_dibuat* tidak di isi, maka data akan terisi
 
   ```insert into barang (id, nama) values (1, "Apel");```
 
-    Menampilkan data pada tabel *barang*
+    Menampilkan semua data pada tabel *barang* (untuk menampilkan kolom terpilih saja ada di bawah)
 
   ```select * from barang```
   
@@ -223,7 +223,7 @@ Sengaja cuma ngisi kolom *id* dan *nama* biar bisa liat data pada kolom *harga*,
 
   ```truncate barang;```
 
-    Menampilkan data pada tabel
+    Menampilkan semua data pada tabel *barang*
 
   ```select * from barang```
   
@@ -262,7 +262,7 @@ Kali ini tabel yang dibuat lebih banyak bro.
      values ("01", "Mie Ayam Original", 10000, 2);
   ```
 
-     Menampilkan data pada tabel products
+     Menampilkan semua data pada tabel *products*
   ```
      select * from products;
   ```
@@ -279,7 +279,7 @@ Kali ini tabel yang dibuat lebih banyak bro.
      values ("01", "Mie Ayam Bakso", "Ayamnya masih hiduo", 15000, 2);
   ```
 
-     Menampilkan data pada tabel products
+     Menampilkan semua data pada tabel *products*
   ```
      select * from products;
   ```
@@ -300,12 +300,26 @@ Kali ini tabel yang dibuat lebih banyak bro.
             ("07", "Mie Ayam Kuli", 20000, 15);
   ```
 
-     Menampilkan data pada tabel products
+     Menampilkan semua data pada tabel *products*
   ```
      select * from products;
   ```
   
 - Contoh
 ![image 22](img/22.png)
+
+## [3] Menampilkan Data Terpilih Saja Pada Tabel
+Sebelumnya gue selalu buat code untuk **Menampilkan semua data pada tabel**, kali ini berhubung datanya udah banyak gue akan buat code untuk **Menampilkan data yang dipilih aja**
+
+- Code
+
+      Menampilkan data *name, quantity, id* pada tabel *products*
+  ```
+     select name, quantity, id from products;
+  ```
+  
+- Contoh
+
+![image 23](img/23.png)
 
 NEXT ISI DATA SEBANYAK-BANYAKNYA UNTUK PRAKTIK LEBIH DALAM YAA BROWWW
